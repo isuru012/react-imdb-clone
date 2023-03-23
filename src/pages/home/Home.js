@@ -33,11 +33,11 @@ function Home() {
 
                 <input type={"checkbox"} value={married} onChange={() => { setMarried(!married) }} />
 
-                <input type={"radio"} id="male" name="gender" />
-                <label for="male">Male</label>
+                <input type={"radio"} id="male" name="gender" onChange={() => { setGender('male') }} />
+                <label htmlFor="male">Male</label>
 
-                <input type={"radio"} id="male" name="gender" />
-                <label for="male">Female</label>
+                <input type={"radio"} id="male" name="gender" onChange={() => { setGender('female') }} />
+                <label htmlFor="male">Female</label>
 
                 <br></br>
                 <Button onClick={saveStudent} sx={{ marginLeft: 20 }} variant="contained">Save Student</Button>
