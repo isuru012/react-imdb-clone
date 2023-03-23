@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TextField from '@mui/material/TextField';
 import './Home.css';
 import { width } from "@mui/system";
@@ -13,6 +13,14 @@ function Home() {
     const [school, setSchool] = useState('');
     const [married, setMarried] = useState(false);
     const [gender, setGender] = useState('');
+
+    //component on-load/on-render
+    //without dep array --> call when any state updates
+    //with dep array --> call when a specific state updates
+    useEffect(()=>{
+        console.log("Hiiii I am useEffect");
+        //api calling
+    })
 
     const saveStudent = () => {
         console.log(name + " " + married + " " + gender);
