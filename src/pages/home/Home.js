@@ -11,10 +11,11 @@ function Home() {
     const [address, setAddress] = useState('');
     const [tel, setTel] = useState('');
     const [school, setSchool] = useState('');
-    const [married,setMarried] = useState(false);
+    const [married, setMarried] = useState(false);
+    const [gender, setGender] = useState('');
 
     const saveStudent = () => {
-        console.log(name+" "+married);
+        console.log(name + " " + married);
     }
 
     return (
@@ -30,21 +31,21 @@ function Home() {
                 <br></br>
                 <TextField id="outlined-basic" label="School" variant="outlined" className="txt" margin="normal" placeholder="Enter School" />
 
-                <input type={"checkbox"} value={married} onChange={()=>{setMarried(!married)}}/>
+                <input type={"checkbox"} value={married} onChange={() => { setMarried(!married) }} />
 
-                <input type={"radio"} id="male" name="gender"/>
+                <input type={"radio"} id="male" name="gender" />
                 <label for="male">Male</label>
 
-                <input type={"radio"} id="male" name="gender"/>
+                <input type={"radio"} id="male" name="gender" />
                 <label for="male">Female</label>
 
                 <br></br>
                 <Button onClick={saveStudent} sx={{ marginLeft: 20 }} variant="contained">Save Student</Button>
             </div>
 
-            <StarButton name="Click Me" color="green"/>
-            <StarButton name="Ane Click Karannna" color="red"/>
-            <StarButton name="Press Me" color="brown"/>
+            <StarButton name="Click Me" color="green" />
+            <StarButton name="Ane Click Karannna" color="red" />
+            <StarButton name="Press Me" color="brown" />
 
         </div>
     )
