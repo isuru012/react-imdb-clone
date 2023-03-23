@@ -5,6 +5,6 @@ export default function About() {
   const [age,setAge] = useState(0);
 
   return (
-    <div>About</div>
+    <div>About Page</div>
   )
 }

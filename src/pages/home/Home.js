@@ -11,9 +11,10 @@ function Home() {
     const [address, setAddress] = useState('');
     const [tel, setTel] = useState('');
     const [school, setSchool] = useState('');
+    const [married,setMarried] = useState(false);
 
     const saveStudent = () => {
-        console.log(name);
+        console.log(name+" "+married);
     }
 
     return (
@@ -28,6 +29,14 @@ function Home() {
                 <TextField id="outlined-basic" label="Tel.No" variant="outlined" className="txt" margin="normal" placeholder="Enter Tel. No" />
                 <br></br>
                 <TextField id="outlined-basic" label="School" variant="outlined" className="txt" margin="normal" placeholder="Enter School" />
+
+                <input type={"checkbox"} value={married} onChange={()=>{setMarried(!married)}}/>
+
+                <input type={"radio"} id="male" name="gender"/>
+                <label for="male">Male</label>
+
+                <input type={"radio"} id="male" name="gender"/>
+                <label for="male">Female</label>
 
                 <br></br>
                 <Button onClick={saveStudent} sx={{ marginLeft: 20 }} variant="contained">Save Student</Button>
