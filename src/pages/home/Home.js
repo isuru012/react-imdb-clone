@@ -15,7 +15,7 @@ function Home() {
     const [gender, setGender] = useState('');
 
     const saveStudent = () => {
-        console.log(name + " " + married);
+        console.log(name + " " + married + " " + gender);
     }
 
     return (
