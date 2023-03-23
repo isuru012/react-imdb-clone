@@ -10,12 +10,12 @@
 .txt{
     position: relative;
     top: 100px;
-    left: 17vw;
+    left: 27vw;
 }
 
 .btn{
     position: relative;
     top: 200px;
-    right: 17vw;
+    left: 10px;
     color: green;
 }
