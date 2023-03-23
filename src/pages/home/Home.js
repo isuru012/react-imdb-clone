@@ -3,6 +3,7 @@ import TextField from '@mui/material/TextField';
 import './Home.css';
 import { width } from "@mui/system";
 import Button from '@mui/material/Button';
+import StarButton from "../../components/StarButton/StarButton";
 
 function Home() {
 
@@ -31,6 +32,11 @@ function Home() {
                 <br></br>
                 <Button onClick={saveStudent} sx={{ marginLeft: 20 }} variant="contained">Save Student</Button>
             </div>
+
+            <StarButton name="Click Me" color="green"/>
+            <StarButton name="Ane Click Karannna" color="red"/>
+            <StarButton name="Press Me" color="brown"/>
+
         </div>
     )
 }
