@@ -1,0 +1,20 @@
+.star-rating {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1;
+    color: #e3e3e3;
+  }
+  
+ 
+  .checked {
+    color: orange !important ;
+  }
+  
+  .unchecked {
+    color: #ccc;
+  }
+  .rating-number{
+    color: black;
+  }
+  
+  
